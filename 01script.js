@@ -1,4 +1,4 @@
-/*
+/*  Javascript tutorial sample code...  codecademy
     do while loop example.
     No matter what numeric value we use, the loop runs only once.
     Because we set the variable x =1 in the body of the loop.
