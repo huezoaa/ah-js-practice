@@ -20,6 +20,14 @@ div {
     background-color:#008800;
 }
 
+.circle {
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    background-color: #FF847C;
+    display: inline-block;
+}
+
 table {
   border-collapse: collapse;
 }

@@ -14,9 +14,9 @@ $(document).ready(function() {
    //     $(this).toggle(1000);
    // });
 
-  $('div').click(function(){
-    $(this).fadeOut('slow');
-  });
+  // $('div').click(function(){
+  //   $(this).fadeOut('slow');
+  // });
 
   // $('li:last-child').click(function(){
   //   $(this).toggle(500);
@@ -26,6 +26,21 @@ $(document).ready(function() {
   $('li').click(function(){
     $(this).fadeOut('slow');
   });
+
+// Example of using variable and id:
+  var $cajita_roja = $('#red');
+
+  $cajita_roja.click(function(){
+    $(this).fadeOut('fast');
+  });
+
+// Example of using variable and class:
+
+  var $circulito = $('.circle');
+
+  $circulito.click(function(){
+    $(this).fadeOut('slow');
+  })
 
 
 });
