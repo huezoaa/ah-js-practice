@@ -36,10 +36,10 @@ $(document).ready(function() {
 
 // Example of using variable and class:
 
-  var $circulito = $('.circle');
+  var $circulito = $('.pink_circle, .yellow_circle');
 
   $circulito.click(function(){
-    $(this).fadeOut('slow');
+    $(this).fadeTo(100, 0.1).fadeTo(200, 1.0)
   })
 
 
