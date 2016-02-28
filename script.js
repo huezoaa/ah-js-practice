@@ -48,11 +48,14 @@ $(document).ready(function() {
 
   $('#double').mouseenter(function(){
     $(this).append($texto);
+    $(this).addClass('highlighted');
+
   });
 
   $('#double').mouseleave(function(){
     $texto.remove();
-  });
+    $(this).removeClass('highlighted');
 
+  });
 
 });

@@ -68,3 +68,9 @@ td {
   display: inline-block;
 
 }
+
+.highlighted {
+    box-shadow: 0 0 78px #FF0000;
+    background-color: #FFFF00;
+    cursor:pointer;
+}
