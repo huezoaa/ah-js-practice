@@ -40,7 +40,13 @@ $(document).ready(function() {
 
   $circulito.click(function(){
     $(this).fadeTo(100, 0.1).fadeTo(200, 1.0)
-  })
+  });
+
+  var $texto = $("<p>I added this paragraph with JQuery. Shows how to .append() / .prepend() </p>");
+
+  $('#double').click(function(){
+    $(this).append($texto);
+  });
 
 
 });

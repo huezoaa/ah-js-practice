@@ -57,9 +57,13 @@ th {
   background-color: #94FF70;
 }
 
+#double {
+    width:414px;
+}
+
 td {
-  width:200px;
   padding:5px;
+  width:200px;
   border:2px solid black;
   display: inline-block;
 
