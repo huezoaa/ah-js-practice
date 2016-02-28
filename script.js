@@ -64,6 +64,11 @@ $(document).ready(function() {
      // append the 'toAdd' var to the list div, wrapped
      // in an '.item' div for later targetting.
      $('input[name=CheckListItem]').val('');
+     // clear the value of the textbox.
+
+     $(document).on('click', '.item', function(){
+      $(this).remove();
+     })
   });
 
  // $('div').click(function() {
