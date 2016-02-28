@@ -1,12 +1,14 @@
 $(document).ready(function() {
    $('div').mouseenter(function() {
        $(this).animate({
-           height: '+=10px'
+           height: '+=50px',
+           width: '+=50px'
        });
    });
    $('div').mouseleave(function() {
        $(this).animate({
-           height: '-=10px'
+           height: '-=50px',
+           width: '-=50px'
        });
    });
 
@@ -42,10 +44,14 @@ $(document).ready(function() {
     $(this).fadeTo(100, 0.1).fadeTo(200, 1.0)
   });
 
-  var $texto = $("<p>I added this paragraph with JQuery. Shows how to .append() / .prepend() </p>");
+  var $texto = $("<p>I added this paragraph with JQuery. Shows how to .append() / .prepend() and .remove() </p>");
 
-  $('#double').click(function(){
+  $('#double').mouseenter(function(){
     $(this).append($texto);
+  });
+
+  $('#double').mouseleave(function(){
+    $texto.remove();
   });
 
 
