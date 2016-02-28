@@ -19,3 +19,97 @@ div {
 #green {
     background-color:#008800;
 }
+
+.pink_circle {
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    background-color: #FF847C;
+    display: inline-block;
+}
+
+.yellow_circle {
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    background-color: #E2BE22;
+    display: inline-block;
+}
+
+.green_circle {
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    background-color: #008800;
+    display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  height:20px;
+  width:200px;
+  display: inline-block;
+  padding:5px;
+  border: 2px solid black;
+  background-color: #94FF70;
+}
+
+.double_wide {
+    width:400px;
+}
+
+.double {
+    width:414px;
+}
+
+td {
+  padding:5px;
+  width:200px;
+  border:2px solid black;
+  display: inline-block;
+
+}
+
+.highlighted {
+    box-shadow: 0 0 78px #FF0000;
+    background-color: #FFFF00;
+    cursor:pointer;
+}
+
+h2 {
+  font-family:arial;
+}
+
+form {
+  display:inline-block;
+}
+
+input[type="text"] {
+width: 300px;
+}
+
+#button {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  background-color: #cc0000;
+  font-family: arial;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.list {
+  font-family: garamond;
+  color: #cc0000;
+  width: 300px;
+}
+
+img {
+  position: relative;
+}
