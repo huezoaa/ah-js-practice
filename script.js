@@ -95,6 +95,8 @@ $(document).ready(function() {
     }
   });
 
+  $('img').draggable();
+
  // $('div').click(function() {
  //     $(this).toggle(1000);
  // });
