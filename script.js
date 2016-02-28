@@ -1,28 +1,16 @@
 $(document).ready(function() {
    $('div').mouseenter(function() {
        $(this).animate({
-           height: '+=50px',
-           width: '+=50px'
+           height: '+=10px',
+           width: '+=10px'
        });
    });
    $('div').mouseleave(function() {
        $(this).animate({
-           height: '-=50px',
-           width: '-=50px'
+           height: '-=10px',
+           width: '-=10px'
        });
    });
-
-   // $('div').click(function() {
-   //     $(this).toggle(1000);
-   // });
-
-  // $('div').click(function(){
-  //   $(this).fadeOut('slow');
-  // });
-
-  // $('li:last-child').click(function(){
-  //   $(this).toggle(500);
-  // });
 
 //Example of selecting by list item tag:
   $('li').click(function(){
@@ -44,18 +32,50 @@ $(document).ready(function() {
     $(this).fadeTo(100, 0.1).fadeTo(200, 1.0)
   });
 
-  var $texto = $("<p>I added this paragraph with JQuery. Shows how to .append() / .prepend() and .remove() </p>");
+  var $texto = $('<p>I added this paragraph with JQuery. Shows how to .append() / .prepend() and .remove() </p>');
 
-  $('#double').mouseenter(function(){
+  $('.double').mouseenter(function(){
     $(this).append($texto);
     $(this).addClass('highlighted');
-
   });
 
-  $('#double').mouseleave(function(){
+  $('.double').mouseleave(function(){
     $texto.remove();
     $(this).removeClass('highlighted');
 
   });
+
+  $('#button').mouseenter(function(){
+    $(this).addClass('highlighted');
+  });
+
+  $('#button').mouseleave(function(){
+    $(this).removeClass('highlighted');
+  })
+
+  $('#button').click(function(){
+    var toAdd = $('input[name=CheckListItem]').val();
+    console.log(toAdd);
+    //saving the value of
+     // input[name=CheckListItem] value into a var
+     var $ToDoItem = $('<li class="item">' + toAdd + '</li>')
+     console.log($ToDoItem);
+     $('.list').append($ToDoItem);
+     // append the 'toAdd' var to the list div, wrapped
+     // in an '.item' div for later targetting.
+     $('input[name=CheckListItem]').val('');
+  });
+
+ // $('div').click(function() {
+ //     $(this).toggle(1000);
+ // });
+
+  // $('div').click(function(){
+  //   $(this).fadeOut('slow');
+  // });
+
+  // $('li:last-child').click(function(){
+  //   $(this).toggle(500);
+  // });
 
 });

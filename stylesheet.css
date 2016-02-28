@@ -57,7 +57,11 @@ th {
   background-color: #94FF70;
 }
 
-#double {
+.double_wide {
+    width:400px;
+}
+
+.double {
     width:414px;
 }
 
@@ -73,4 +77,35 @@ td {
     box-shadow: 0 0 78px #FF0000;
     background-color: #FFFF00;
     cursor:pointer;
+}
+
+h2 {
+  font-family:arial;
+}
+
+form {
+  display:inline-block;
+}
+
+input[type="text"] {
+width: 300px;
+}
+
+#button {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  background-color: #cc0000;
+  font-family: arial;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.list {
+  font-family: garamond;
+  color: #cc0000;
+  width: 300px;
 }
