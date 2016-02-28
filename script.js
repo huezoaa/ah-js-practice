@@ -68,7 +68,31 @@ $(document).ready(function() {
 
      $(document).on('click', '.item', function(){
       $(this).remove();
-     })
+     });
+     // This removes the ToDo item when clicked.
+     // had to use .on because we are not reloading the dom
+     // .on takes: ( event,  selector, function(){} )
+  });
+
+  $(document).keydown(function(key){
+    switch(parseInt(key.which,10)){
+      // Left arrow is pressed (value 37)
+      case 37:
+        $('img').animate({left: "-=30px"}, 'fast');
+        break;
+      // Up Arrow is pressed (value 38)
+      case 38:
+        $('img').animate({top: "-=30px"}, 'fast');
+        break;
+      // Right Arrow is pressed (value 39)
+      case 39:
+        $('img').animate({left: "+=30px"}, 'fast');
+        break;
+      // Down arrow is pressed (value 40)
+      case 40:
+        $('img').animate({top: "+=30px"}, 'fast')
+        break;
+    }
   });
 
  // $('div').click(function() {
