@@ -11,7 +11,7 @@ var getToDaChoppa = function(x){
 };
 
 getToDaChoppa();
-console.log('------------01-------------------------------','')
+console.log('------------01-------------------------------','');
 // ###################################
 
 // Object example.  Objects are collections of information (keys and values) between {}  (A.H. hash, no?)
