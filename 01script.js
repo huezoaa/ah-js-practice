@@ -37,21 +37,21 @@ console.log('------------02-------------------------------','')
 
 var friends = new Object();
 
-friends.bill = {
-  firstName: "Bill",
+friends.billy = {
   lastName: "Gates",
+  firstName: "Bill",
   number: "3057765964",
   address: ['3535 E. Hiawatha Ave. Apt 702']
 };
-friends.steve = {
+friends.stevie = {
   firstName: "Steve",
   lastName: "Jobs",
   number: "3057525733",
   address: ['3515 E. Fairview St.']
 };
 
-var list = function(obj){
-  for (var prop in obj){
+var list = function(obj){   // this function prints out the top level keys in the object
+  for (var prop in obj){    // which are:  billy and stevie (friends.billy and friends.stevie)
     console.log(prop);
   }
 }
@@ -59,10 +59,12 @@ var list = function(obj){
 list(friends); // this function prints out the top level keys in the object
 console.log('------------03-------------------------------','')
 
-var search = function(name){
+var search = function(name){  //Remmember: prop is the top level KEY
   for(var prop in friends){
     if(friends[prop].firstName === name){
+      console.log('Next, a console.log of -->>  friends[prop] : ');
       console.log(friends[prop]);
+      console.log('Next, a return of -->> friends[prop]');
       return friends[prop];
     }
   }
@@ -71,9 +73,9 @@ var search = function(name){
 search("Steve");
 console.log('------------04-------------------------------','')
 
-var bud = "bill"
-console.log("var bud = 'bill'  -- to understand the 2 examples below")
-console.log("friends[" +"\'" + bud +"\'" + "] = " + friends['bill'])
+var bud = "billy"
+console.log("var bud = 'billy'  -- to understand the 2 examples below")
+console.log("friends[" +"\'" + bud +"\'" + "] = " + friends['billy'])
 console.log("friends[bud] = " + friends[bud])
 console.log("friends.bud = " + friends.bud)
 console.log('------------05-------------------------------','')
@@ -95,7 +97,7 @@ susan.setAge = setAge; // This is where we access 'setAge' from above.
 
 console.log("bob.age = " + bob.age);
 bob.setAge(43);
-console.log("call bob.setAge.  Then", "bob.age = " + bob.age);
+console.log("call bob.setAge(43)  Then", "bob.age = " + bob.age);
 console.log('------------06-------------------------------','')
 
 
@@ -250,7 +252,7 @@ function Customer(first, last, age){
   this.firstname = first;
   this.lastname = last;
   this.age = age;
-  var bankBalance = 7500;
+  var bankBalance = 7500;  // 'var' made this a private variable.
 
   var returnBalance = function(){  // 'var' made this method private
     return bankBalance;  // bankBalance is a private variable
