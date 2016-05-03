@@ -36,14 +36,16 @@ my_lambda.call(2,3)
 title('Proc with 2 of 2 arguments')
 my_proc = Proc.new {|x,y| puts x * y}
 my_proc.call(3,4)
-
-# Lambda with 1 of 2 arguments. Error expected
-title('Lambda with only 1 of 2 arguments.  Error expected')
-my_lambda = ->(x,y){puts "No errors here!"}
-my_lambda.call(5)
+my_proc.(3,4)
+my_proc[3,4]
+# # Lambda with 1 of 2 arguments. Error expected
+# title('Lambda with only 1 of 2 arguments.  Error expected')
+# my_lambda = ->(x,y){puts "No errors here!"}
+# my_lambda.call(5)
 
 # Proc with 1 of 2 arguments.  No error expected
 title('Proc with 1 of 2 arguments. No error expected')
 my_proc = Proc.new {|x,y| puts "No errors here!"}
 my_proc.call(6)
+
 
