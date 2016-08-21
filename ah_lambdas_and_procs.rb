@@ -1,8 +1,8 @@
 # Example of calling lambdas:
 
 def title(text='')
-  30.times{print '*'}
-  puts "\n", text
+  puts "*" * 30
+  puts text
   2.times{puts "\n"}
 end
 
