@@ -52,7 +52,7 @@ friends.stevie = {
 
 var list = function(obj){   // this function prints out the top level keys in the object
   for (var prop in obj){    // which are:  billy and stevie (friends.billy and friends.stevie)
-    console.log(prop);
+    console.log('prop: ' + prop);
   }
 }
 
@@ -286,11 +286,15 @@ function atmCustomer(first, last, password){
     if (d == password) return accountBalance;
     else return "Wrong password.";
   };
+
+  this.tryme = accountBalance;
 };
 
 var mike = new atmCustomer('Mike', 'York', 5678);
 console.log("mike.showBal(5678): " + mike.showBal(5678));
 console.log("mike.showBal(112233): " + mike.showBal(112233));
+console.log("try to print out accountBalance directly: mike.accountBalance= " + mike.accountBalance);
+console.log("try again.  mike.tryme = " + mike.tryme);
 
 console.log('------------15-------------------------------','')
 /*#########################################################*/
